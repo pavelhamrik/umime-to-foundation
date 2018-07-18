@@ -1,7 +1,27 @@
+@import 'util/util';
+@import '../settings';
+
 .top-bar-container {
+    background: $white;
+    box-shadow: $custom-soft-shadow;
     margin-bottom: 2rem;
+
+    .top-bar-row:not(:last-child) {
+        border-bottom: 1px solid $border-gray;
+    }
+
+    .top-bar-row {
+        padding: $custom-vertical-padding 0;
+    }
 }
 
 .top-bar {
+    a {
+        color: $black;
+    }
 
+    .menu {
+        //@include flex;
+        @include flex-align(justify, middle);
+    }
 }

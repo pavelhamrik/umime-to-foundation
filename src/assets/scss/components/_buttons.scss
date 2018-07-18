@@ -1,11 +1,5 @@
-//@import "foundation/variables";
-//@import "foundation/components/global";
-//@import "foundation/components/buttons";
-
 @import 'util/util';
-
-@import "../settings";
-@import "../custom-settings";
+@import '../settings';
 
 .button {
     box-shadow: $button-box-shadow;

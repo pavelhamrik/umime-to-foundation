@@ -52,10 +52,15 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// icons
+
+@import 'icons';
 
 // umime to custom styles
 
+@import 'components/badge';
 @import 'components/buttons';
+@import 'components/dropdowns';
 @import 'components/tables';
 @import 'components/topbar';
 @import 'components/contentbox';
