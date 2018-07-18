@@ -1,0 +1,18 @@
+@import 'util/util';
+
+.content-box {
+    background: $white;
+    border-radius: $global-radius;
+    box-shadow: $custom-soft-shadow;
+
+    .content-box-header {
+        @include flex;
+        @include flex-align(justify, middle);
+
+        padding: $custom-vertical-padding $custom-horizontal-padding;
+    }
+
+    .content-box-section {
+
+    }
+}

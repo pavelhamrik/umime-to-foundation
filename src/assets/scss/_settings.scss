@@ -62,6 +62,11 @@
 
 @import 'util/util';
 
+// 0. Custom
+// ---------
+
+@import "custom-settings";
+
 // 1. Global
 // ---------
 
@@ -80,7 +85,7 @@ $medium-gray: #BECADB;
 $dark-gray: #717378;
 $black: #34495E;
 $white: #fefefe;
-$body-background: $white;
+$body-background: #F5F6F7;
 $body-font-color: $black;
 $body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
@@ -89,7 +94,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0.35rem;
+$global-radius: 0.5rem;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -845,8 +850,8 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0;
+$topbar-background: $white;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;

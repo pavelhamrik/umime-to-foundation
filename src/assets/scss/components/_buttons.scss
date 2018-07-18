@@ -38,9 +38,13 @@
         }
 
         &.suppressed:hover {
-            background: scale-color($button-suppressed-background, $lightness: -15%)
+            background: scale-color($button-suppressed-background, $lightness: -7%)
         }
     }
 
     // todo: hovers
+}
+
+table .button:last-child {
+    margin-bottom: 0;
 }
