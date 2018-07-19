@@ -3,7 +3,7 @@
 
 @each $app, $color in $custom-apps {
     .identity-#{$app} {
-        background: url('./assets/img/avatar-small-#{$app}.png') 0.375rem center no-repeat;
+        background: url('img/avatar-small-#{$app}.png') 0.375rem center no-repeat;
         background-size: 46px;
         padding-left: 3.5rem !important;
     }
