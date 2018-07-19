@@ -80,11 +80,11 @@ $foundation-palette: (
   warning: #FFA000,
   alert: #E65D50,
 );
-$light-gray: #F2F3F5;
-$medium-gray: #BECADB;
-$dark-gray: #717378;
 $black: #34495E;
-$white: #fefefe;
+$light-gray: rgba($black, 0.08);
+$medium-gray: rgba($black, 0.45);
+$dark-gray: rgba($black, 0.65);
+$white: #FFFFFF;
 $body-background: #F5F6F7;
 $body-font-color: $black;
 $body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -317,9 +317,9 @@ $buttongroup-radius-on-each: true;
 // 13. Callout
 // -----------
 
-$callout-background: $white;
+$callout-background: opacify($light-gray, 0.25);
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
+$callout-border: none;
 $callout-margin: 0 0 1rem 0;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;

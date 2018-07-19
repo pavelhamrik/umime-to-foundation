@@ -58,9 +58,13 @@
 
 // umime to custom styles
 
+@import 'colors';
+@import 'identities';
+
 @import 'components/badge';
 @import 'components/buttons';
 @import 'components/dropdowns';
+@import 'components/hr';
 @import 'components/tables';
 @import 'components/topbar';
 @import 'components/contentbox';

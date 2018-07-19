@@ -26,21 +26,22 @@
 
 .icon-arc-up:before {
   content: "\e903";
-  color: #979797;
 }
 .icon-arc-right:before {
   content: "\e902";
-  color: #979797;
 }
 .icon-arc-down:before {
   content: "\e900";
-  color: #979797;
 }
 .icon-arc-left:before {
   content: "\e901";
-  color: #979797;
+}
+.icon-cross:before {
+  content: "\e904";
+}
+.icon-cross-small:before {
+  content: "\e906";
 }
 .icon-magnifying-glass:before {
-  content: "\e904";
-  color: #979797;
+  content: "\e905";
 }

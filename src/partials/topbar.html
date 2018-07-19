@@ -5,30 +5,54 @@
 
 <div class="top-bar-container" id="responsive-menu">
 
-    <div class="top-bar-row">
+    <div class="top-bar-row top-bar-row-meta">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="medium-12 cell">
                     <div class="top-bar">
                         <div class="top-bar-left">
                             <ul class="dropdown menu" data-dropdown-menu>
-                                <li class="has-submenu">
-                                    <a href="#0">Umíme česky</a>
+                                <li><a href="/" class="identity identity-czech">Umíme <strong class="color-czech">česky</strong></a></li>
+                                <li class="has-submenu app-switch">
+                                    <span href="#0" class="opener icon-arc-down"></span>
                                     <ul class="submenu menu vertical" data-submenu>
-                                        <li><a href="#0">Umíme anglicky</a></li>
-                                        <li><a href="#0">Umíme matiku</a></li>
-                                        <li><a href="#0">Umíme fakta</a></li>
-                                        <li><a href="#0">Umíme programovat</a></li>
-                                        <li><a href="#0">Umíme německy</a></li>
+                                        <li><a href="#0" class="identity identity-english">Umíme <strong class="color-english">anglicky</strong></a></li>
+                                        <li><a href="#0" class="identity identity-math">Umíme <strong class="color-math">matiku</strong></a></li>
+                                        <li><a href="#0" class="identity identity-facts">Umíme <strong class="color-facts">fakta</strong></a></li>
+                                        <li><a href="#0" class="identity identity-programming">Umíme <strong class="color-programming">programovat</strong></a></li>
+                                        <li><a href="#0" class="identity identity-german">Umíme <strong class="color-german">německy</strong></a></li>
                                     </ul>
+                                </li>
+                                <li class="search">
+                                    <input type="search" placeholder="Hledat">
+                                    <button class="button-clear icon-cross-small"></button>
                                 </li>
                             </ul>
                         </div>
                         <div class="top-bar-right">
-                            <ul class="menu">
-                                <li><input type="search" placeholder="Search"></li>
-                                <li>
-                                    <button type="button" class="button">Search</button>
+                            <ul class="dropdown menu" data-dropdown-menu>
+                                <li class="has-submenu">
+                                    <a href="#0">Učitel</a>
+                                    <ul class="submenu menu vertical" data-submenu>
+                                        <li><a href="#0">Domácí úkoly</a></li>
+                                        <li><a href="#0">…</a></li>
+                                        <li><a href="#0">…</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#0" class="stacked-labels">
+                                        <span class="dongle"><img src="" class="user-picture"></span>
+                                        <span class="stack">
+                                            <strong class="user-name">Koblizek</strong>
+                                            <span class="subtitle">Můj profil</span>
+                                        </span>
+                                    </a>
+                                    <ul class="submenu menu vertical" data-submenu>
+                                        <li><a href="#0">Můj profil</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#0">…</a></li>
+                                        <li><a href="#0">…</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -38,7 +62,7 @@
         </div>
     </div>
 
-    <div class="top-bar-row">
+    <div class="top-bar-row top-bar-row-menu">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="medium-12 cell">
@@ -60,13 +84,13 @@
                                         <li><a href="#0">Pexeso</a></li>
                                     </ul>
                                 </li>
-                                <li class="has-submenu is-active">
+                                <li class="has-submenu current">
                                     <a href="#0">Netradiční</a>
-                                    <ul class="submenu menu vertical js-dropdown-active" data-submenu>
+                                    <ul class="submenu menu vertical" data-submenu>
                                         <li><a href="#0">Vtipy</a></li>
                                         <li><a href="#0">Roboti</a></li>
                                         <li><a href="#0">Střílečka</a></li>
-                                        <li><a href="#0" class="is-active">Tetris</a></li>
+                                        <li><a href="#0" class="current">Tetris</a></li>
                                         <li><a href="#0">Příšerky</a></li>
                                         <li class="divider"></li>
                                         <li class="title">Více hráčů</li>

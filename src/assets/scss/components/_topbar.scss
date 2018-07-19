@@ -10,18 +10,127 @@
         border-bottom: 1px solid $border-gray;
     }
 
-    .top-bar-row {
+    .top-bar-row-meta {
         padding: $custom-vertical-padding 0;
+
+        .top-bar-left .menu {
+            @include flex-align(left, middle);
+        }
+
+        .identity {
+            font-size: 1.5rem;
+        }
+
+        .dropdown>li>.identity {
+            margin-right: -0.75rem;
+        }
+
+        .dropdown>.has-submenu:not(:last-child)>a:not(.stacked-labels) {
+            padding: $custom-vertical-padding * 1.125;
+            margin-right: 1rem;
+        }
+
+        .search {
+            position: relative;
+
+            input {
+                box-shadow: none;
+                padding: $custom-vertical-padding 2.75rem;
+                height: 2.75rem;
+                background: $light-gray;
+                border: none;
+                margin-right: 0;
+                max-width: 280px;
+
+                &:focus {
+                    background: opacify($light-gray, 0.09);
+                }
+            }
+
+            &:before {
+                content: '\e905';
+                color: $medium-gray;
+                font-family: $custom-icon-font;
+                position: absolute;
+                top: 0.625rem;
+                left: 1rem;
+                display: block;
+            }
+
+            .button-clear {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2.75rem;
+                padding: $custom-vertical-padding;
+                color: $medium-gray;
+
+                &:hover,
+                &:focus {
+                    color: $black;
+                }
+            }
+        }
+
+        .app-switch {
+            margin-right: 2rem;
+
+            .opener {
+                font-size: 12px;
+                border-radius: $global-radius;
+                padding: $custom-vertical-padding * 1.375;
+
+                &:hover,
+                &:focus {
+                    background: $light-gray;
+                }
+            }
+
+            .submenu {
+                margin-top: 0.875rem;
+
+                a {
+                    padding-top: $custom-vertical-padding * 1.5;
+                    padding-bottom: $custom-vertical-padding * 1.5;
+                }
+            }
+        }
+
+        .stacked-labels {
+            padding: $custom-vertical-padding * 0.575 $dropdown-padding;
+
+            .stack {
+                display: inline-block;
+
+                .subtitle {
+                    display: block;
+                    font-size: $small-font-size;
+                }
+            }
+
+            &:after {
+                position: relative;
+                top: -0.5rem;
+            }
+        }
+
+    }
+
+    .top-bar-row-menu {
+        padding: $custom-vertical-padding * 0.5 0;
+
+        .menu {
+            //@include flex-align(justify, middle);
+
+            &>li {
+                margin-right: 1rem;
+            }
+        }
     }
 }
 
 .top-bar {
     a {
         color: $black;
-    }
-
-    .menu {
-        //@include flex;
-        @include flex-align(justify, middle);
     }
 }

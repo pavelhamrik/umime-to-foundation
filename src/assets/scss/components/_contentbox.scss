@@ -5,6 +5,7 @@
     background: $white;
     border-radius: $global-radius;
     box-shadow: $custom-soft-shadow;
+    margin: 0 0 $custom-box-margin;
 
     .content-box-header {
         @include flex;
@@ -15,11 +16,24 @@
         h2,
         h3 {
             margin-bottom: 0;
+            line-height: 1.5rem;
+        }
+
+        h2 {
+            font-size: $custom-content-box-h2-size;
+        }
+
+        h3 {
+            font-size: $custom-content-box-h3-size;
         }
     }
 
     .content-box-section {
         padding: $custom-vertical-padding * 1.5 $custom-horizontal-padding $custom-vertical-padding;
+
+        >.grid-container {
+            padding: 0;
+        }
     }
 
     &>*:not(:last-child) {
