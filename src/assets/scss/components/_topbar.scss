@@ -6,6 +6,11 @@
     box-shadow: $custom-soft-shadow;
     margin-bottom: 2rem;
 
+    @include breakpoint(small only) {
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+
     .top-bar-row:not(:last-child) {
         border-bottom: 1px solid $border-gray;
     }
@@ -23,6 +28,16 @@
 
         .dropdown>li>.identity {
             margin-right: -0.75rem;
+
+
+        }
+
+        .top-bar-title {
+            margin: 0;
+
+            @include breakpoint(small only) {
+                display: none;
+            }
         }
 
         .dropdown>.has-submenu:not(:last-child)>a:not(.stacked-labels) {
@@ -41,6 +56,10 @@
                 border: none;
                 margin-right: 0;
                 max-width: 280px;
+
+                @include breakpoint(small only) {
+                    max-width: 100%;
+                }
 
                 &:focus {
                     background: opacify($light-gray, 0.09);
@@ -68,6 +87,7 @@
                 &:hover,
                 &:focus {
                     color: $black;
+                    outline: none;
                 }
             }
         }
@@ -78,16 +98,22 @@
             .opener {
                 font-size: 12px;
                 border-radius: $global-radius;
-                padding: $custom-vertical-padding * 1.375;
+                padding: $custom-vertical-padding * 1.325 !important;
+                height: 2.75rem;
+                display: inline-block;
 
                 &:hover,
                 &:focus {
                     background: $light-gray;
                 }
+
+                &:after {
+                    margin-left: 0;
+                }
             }
 
             .submenu {
-                margin-top: 0.875rem;
+                margin-top: 0.875   rem;
 
                 a {
                     padding-top: $custom-vertical-padding * 1.5;
@@ -97,10 +123,13 @@
         }
 
         .stacked-labels {
-            padding: $custom-vertical-padding * 0.575 $dropdown-padding;
+            padding: $custom-vertical-padding * 0.4175 $dropdown-padding;
+            @include flex;
+            @include flex-align(space-between, center);
 
             .stack {
                 display: inline-block;
+                margin-right: 0.5rem;
 
                 .subtitle {
                     display: block;
@@ -108,9 +137,21 @@
                 }
             }
 
+            .dongle {
+                background: $white;
+                border: 1px solid opacify($border-gray, 0.15);
+                border-radius: $custom-ultimate-radius;
+                display: inline-block;
+                margin-right: 0.75rem;
+
+                img {
+                    display: block;
+                }
+            }
+
             &:after {
                 position: relative;
-                top: -0.5rem;
+                top: 0.25rem;
             }
         }
 
@@ -127,10 +168,44 @@
             }
         }
     }
+
+    .accordion-menu {
+        &>li:not(:first-child)[aria-expanded="true"] {
+            border-top: 1px solid $border-gray;
+        }
+
+        &>li:not(:last-child)[aria-expanded="true"] {
+            border-bottom: 1px solid $border-gray;
+        }
+    }
 }
 
 .top-bar {
     a {
         color: $black;
+    }
+}
+
+.title-bar {
+    border-bottom: 1px solid $border-gray;
+    box-shadow: $custom-soft-shadow;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+
+    .menu-icon {
+        outline: none;
+    }
+
+    .title-bar-title {
+        height: 100%;
+
+        .identity {
+            color: $black;
+            display: block;
+            font-size: 1.5rem;
+            height: 100%;
+            padding-top: $custom-vertical-padding;
+            padding-bottom: $custom-vertical-padding;
+        }
     }
 }

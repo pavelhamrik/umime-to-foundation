@@ -1,0 +1,20 @@
+@import 'util/util';
+@import '../settings';
+
+.accordion-menu {
+    // todo: redefine the caret
+
+
+    .title {
+        color: $medium-gray;
+        font-size: $small-font-size;
+        padding: $custom-vertical-padding $dropdown-padding;
+        line-height: 1rem;
+        cursor: default;
+    }
+
+    .divider {
+        border-bottom: 1px solid $border-gray;
+        margin: $custom-vertical-padding * 0.5 0;
+    }
+}
