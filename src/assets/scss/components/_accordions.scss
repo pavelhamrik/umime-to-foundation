@@ -2,8 +2,60 @@
 @import '../settings';
 
 .accordion-menu {
-    // todo: redefine the caret
+    .is-accordion-submenu-parent {
+        &:not(.has-submenu-toggle)>a {
+            position: relative;
 
+            &:after {
+                content: '\e900';
+                font-family: $custom-icon-font;
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                right: $custom-horizontal-padding;
+                margin-top: -6px;
+                width: auto;
+                height: 12px;
+                transition: transform 0.3s ease-out;
+            }
+        }
+
+        &[aria-expanded='true'] > a:after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .has-submenu {
+        a {
+            color: $black;
+            border-radius: $global-radius;
+
+            &:hover {
+                background-color: $light-gray;
+                color: $black;
+            }
+        }
+
+        &.is-active>a {
+            color: $black;
+            //background-color: $light-gray;
+        }
+
+        &.current>a {
+            font-weight: $global-weight-bold;
+        }
+
+        &>.submenu .current {
+            border-left: 0.25rem solid $primary-color;
+            padding-left: $dropdown-padding - 0.25rem;
+            font-weight: $global-weight-bold;
+            border-radius: 0 $global-radius $global-radius 0;
+        }
+    }
+
+    .has-submenu[aria-expanded="true"]>a {
+        background-color: $light-gray;
+    }
 
     .title {
         color: $medium-gray;

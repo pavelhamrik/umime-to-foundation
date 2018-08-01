@@ -10,8 +10,11 @@
     .content-box-header {
         @include flex;
         @include flex-align(justify, middle);
+        padding: $custom-vertical-padding $custom-small-horizontal-padding;
 
-        padding: $custom-vertical-padding $custom-horizontal-padding;
+        @include breakpoint(medium up) {
+            padding: $custom-vertical-padding $custom-horizontal-padding;
+        }
 
         h2,
         h3 {
@@ -29,7 +32,11 @@
     }
 
     .content-box-section {
-        padding: $custom-vertical-padding * 1.5 $custom-horizontal-padding $custom-vertical-padding;
+        padding: $custom-vertical-padding * 1.5 $custom-small-horizontal-padding $custom-vertical-padding;
+
+        @include breakpoint(medium up) {
+            padding: $custom-vertical-padding * 1.5 $custom-horizontal-padding $custom-vertical-padding;
+        }
 
         >.grid-container {
             padding: 0;

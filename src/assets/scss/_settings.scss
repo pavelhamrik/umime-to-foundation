@@ -96,7 +96,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0.5rem;
 $global-menu-padding: 0.7rem 1rem;
-$global-menu-nested-margin: 1rem;
+$global-menu-nested-margin: 2rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
@@ -244,7 +244,7 @@ $accordion-content-padding: 1rem;
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
-$accordionmenu-arrows: true;
+$accordionmenu-arrows: false;
 $accordionmenu-arrow-color: $primary-color;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;
@@ -402,7 +402,7 @@ $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: none;
 $dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-background-active: null;
 
 // 19. Flexbox Utilities
 // ---------------------

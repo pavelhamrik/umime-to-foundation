@@ -5,6 +5,7 @@
 
 $custom-vertical-padding: 0.75rem;
 $custom-horizontal-padding: 1.75rem;
+$custom-small-horizontal-padding: 0.75rem;
 
 $custom-box-margin: 1.5rem;
 
@@ -22,11 +23,18 @@ $custom-apps: (
         'german':       #F0AE35
 );
 
+$custom-active-darken-color: -14%;
+
 // buttons
 
 $button-suppressed-background: #E8ECEF;
 $button-box-shadow: inset 0 rem-calc(-1) 0 rgba(0,0,0,0.15);
 $button-primary-box-shadow: inset 0 rem-calc(-2) 0 rgba(0,0,0,0.15);
+
+// animations
+
+$custom-hover-transition: background-color 0.25s ease-out, color 0.25s ease-out;;
+
 
 // box shadows
 

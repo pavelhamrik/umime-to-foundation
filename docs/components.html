@@ -11,13 +11,6 @@
   </head>
   <body>
 
-    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <div class="title-bar-title">
-            <a href="index.html" class="identity identity-czech">Umíme <strong class="color-czech">česky</strong></a>
-        </div>
-    </div>
-    
     <div class="top-bar-container" id="responsive-menu">
     
         <div class="top-bar-row top-bar-row-meta">
@@ -25,29 +18,33 @@
                 <div class="grid-x grid-margin-x">
                     <div class="medium-12 cell">
                         <div class="top-bar">
-                            <div class="top-bar-left">
+    
+                            <ul class="dropdown vertical medium-horizontal menu" id="top-bar-identity-menu" data-responsive-menu="accordion medium-dropdown" data-hover-delay="750">
+                                <li class="show-for-small-only" id="top-bar-responsive-menu-toggler" data-toggler="is-active">
+                                    <button type="button" data-toggle="top-bar-personal-menu top-bar-content-menu top-bar-responsive-menu-toggler"></button>
+                                </li>
+                                <li class="has-submenu app-switch">
+                                    <a href="index.html" class="identity identity-czech">Umíme <strong class="color-czech">česky</strong></a>
+                                    <ul class="submenu menu vertical" data-submenu>
+                                        <li><a href="#0" class="identity identity-english">Umíme <strong class="color-english">anglicky</strong></a></li>
+                                        <li><a href="#0" class="identity identity-math">Umíme <strong class="color-math">matiku</strong></a></li>
+                                        <li><a href="#0" class="identity identity-facts">Umíme <strong class="color-facts">fakta</strong></a></li>
+                                        <li><a href="#0" class="identity identity-programming">Umíme <strong class="color-programming">programovat</strong></a></li>
+                                        <li><a href="#0" class="identity identity-german">Umíme <strong class="color-german">německy</strong></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+    
+                            <div id="top-bar-personal-menu" data-toggler=".responsive-menu">
                                 <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown" data-multi-open="false">
-                                    <li class="top-bar-title"><a href="index.html" class="identity identity-czech">Umíme <strong class="color-czech">česky</strong></a></li>
-                                    <li class="has-submenu app-switch">
-                                        <a href="#" class="opener"><span class="show-for-small-only">Další systémy Umíme to</span></a>
-                                        <ul class="submenu menu vertical" data-submenu>
-                                            <li><a href="#0" class="identity identity-english">Umíme <strong class="color-english">anglicky</strong></a></li>
-                                            <li><a href="#0" class="identity identity-math">Umíme <strong class="color-math">matiku</strong></a></li>
-                                            <li><a href="#0" class="identity identity-facts">Umíme <strong class="color-facts">fakta</strong></a></li>
-                                            <li><a href="#0" class="identity identity-programming">Umíme <strong class="color-programming">programovat</strong></a></li>
-                                            <li><a href="#0" class="identity identity-german">Umíme <strong class="color-german">německy</strong></a></li>
-                                        </ul>
+                                    <li>
+                                        <div class="search">
+                                            <input type="search" placeholder="Hledat">
+                                            <button class="button-clear icon-cross-small"></button>
+                                        </div>
                                     </li>
-                                    <li class="search">
-                                        <input type="search" placeholder="Hledat">
-                                        <button class="button-clear icon-cross-small"></button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="top-bar-right">
-                                <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
-                                    <li class="has-submenu">
-                                        <a href="#0">Učitel</a>
+                                    <li class="has-submenu primary-container">
+                                        <a href="#0" class="primary">Učitel</a>
                                         <ul class="submenu menu vertical" data-submenu>
                                             <li><a href="#0">Domácí úkoly</a></li>
                                             <li><a href="#0">…</a></li>
@@ -71,18 +68,20 @@
                                     </li>
                                 </ul>
                             </div>
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     
-        <div class="top-bar-row top-bar-row-menu">
+        <div class="top-bar-row top-bar-row-menu" id="top-bar-content-menu" data-toggler=".responsive-menu">
             <div class="grid-container">
                 <div class="grid-x grid-margin-x">
                     <div class="medium-12 cell">
                         <div class="top-bar">
                             <div class="top-bar-left">
+    
                                 <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown" data-multi-open="false">
                                     <li><a href="#0">Přehled</a></li>
                                     <li class="has-submenu">
@@ -149,6 +148,7 @@
     
                                     <li><a href="#0">Učím se</a></li>
                                 </ul>
+    
                             </div>
                         </div>
                     </div>

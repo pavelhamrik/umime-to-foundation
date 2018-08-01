@@ -15,7 +15,6 @@
 
     >.current>a {
         // todo: fix the !important
-        //background: $light-gray !important;
         font-weight: $global-weight-bold;
     }
 
@@ -30,10 +29,9 @@
             }
         }
 
-        &.is-active>a,
-        &.is-active>.opener {
+        &.is-active>a {
             color: $black;
-            background: $light-gray;
+            background-color: $light-gray;
         }
 
         &>a:after {
@@ -59,7 +57,6 @@
             .current {
                 border-left: 0.25rem solid $primary-color;
                 padding-left: $dropdown-padding - 0.25rem;
-                //background: $light-gray;
                 font-weight: $global-weight-bold;
             }
         }
