@@ -35,11 +35,16 @@
         padding: $custom-vertical-padding * 1.5 $custom-small-horizontal-padding $custom-vertical-padding;
 
         @include breakpoint(medium up) {
-            padding: $custom-vertical-padding * 1.5 $custom-horizontal-padding $custom-vertical-padding;
+            padding-left: $custom-horizontal-padding;
+            padding-right: $custom-horizontal-padding;
         }
 
         >.grid-container {
             padding: 0;
+        }
+
+        &.tight {
+            padding-top: $custom-vertical-padding;
         }
     }
 

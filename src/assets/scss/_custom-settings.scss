@@ -11,6 +11,8 @@ $custom-box-margin: 1.5rem;
 
 // colors
 
+$custom-background-color: #F5F6F7;
+
 $border-gray: rgba(0,0,0,.07);
 $border-medium-gray: rgba(0,0,0,.15);
 
@@ -33,8 +35,7 @@ $button-primary-box-shadow: inset 0 rem-calc(-2) 0 rgba(0,0,0,0.15);
 
 // animations
 
-$custom-hover-transition: background-color 0.25s ease-out, color 0.25s ease-out;;
-
+$custom-hover-transition: background-color 0.15s ease-out, color 0.15s ease-out;
 
 // box shadows
 
@@ -48,6 +49,11 @@ $custom-floating-shadow: 0 1px 7px  0 rgba(0,0,0,.07),
 
 $custom-content-box-h2-size: 18px;
 $custom-content-box-h3-size: 16px;
+
+// line heights
+
+$custom-medium-line-height: 1.5rem;
+$custom-small-line-height: 1.25rem;
 
 // icons
 

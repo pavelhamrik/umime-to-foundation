@@ -2,19 +2,23 @@
 @import '../settings';
 
 .dropdown {
-    >*>a {
+    > * > a {
         border-radius: $global-radius;
     }
 
-    >.is-active>a,
-    >*>a:hover,
-    >*>a:focus {
+    > .is-active > a,
+    > * > a:hover,
+    &.apparent > * > a {
         background-color: $light-gray;
         color: $black;
     }
 
-    >.current>a {
-        // todo: fix the !important
+    &.apparent > .has-submenu.is-active > a,
+    &.apparent > * > a:hover {
+        background-color: opacify($light-gray, 0.09);
+    }
+
+    > .current > a {
         font-weight: $global-weight-bold;
     }
 
@@ -29,12 +33,12 @@
             }
         }
 
-        &.is-active>a {
+        &.is-active > a {
             color: $black;
             background-color: $light-gray;
         }
 
-        &>a:after {
+        & > a:after {
             content: '\e900';
             display: inline-block;
             font-family: $custom-icon-font;
@@ -43,7 +47,7 @@
             position: static;
         }
 
-        &>.submenu {
+        & > .submenu {
             border-radius: $global-radius;
             box-shadow: $custom-floating-shadow;
             margin-top: 0.25rem;
