@@ -19,7 +19,8 @@
         color: $black;
 
         @each $designation, $color in $foundation-palette {
-            &.#{$designation} {
+            &.#{$designation},
+            &.#{$designation}[disabled]:hover {
                 color: $color;
             }
 
@@ -28,12 +29,13 @@
             }
         }
 
-        &.suppressed:hover {
+        &:hover {
             background: scale-color($button-suppressed-background, $lightness: -7%)
         }
 
-        &[disabled] {
-            background: $button-suppressed-background;
+        &[disabled],
+        &[disabled]:hover {
+            background: opacify($button-suppressed-background, 0.11);
             box-shadow: none;
         }
     }

@@ -11,13 +11,50 @@
           <h2 id="typography">Typography</h2>
         </div>
         <div class="content-box-section">
-          <div class="callout">
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 cell">
+              <div class="callout">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+              </div>
+            </div>
+            <div class="medium-6 cell">
+              <div class="callout">
+                <h1 class="subheader">Subheader 1</h1>
+                <h2 class="subheader">Subheader 2</h2>
+                <h3 class="subheader">Subheader 3</h3>
+                <h4 class="subheader">Subheader 4</h4>
+                <h5 class="subheader">Subheader 5</h5>
+                <h6 class="subheader">Subheader 6</h6>
+              </div>
+            </div>
+          </div>
+
+          <h2>Paragraphs</h2>
+          <p>Žáci při učení obvykle volí jednu z nejméně vhodných strategií pro osvojení učiva - opakované čtení textu.</p>
+          <p>Testování a procvičování látky vidí pouze jako kontrolu, že si látku správně zapamatovali. Tato metoda „nasávací houby“ je nejméně účinná a již po pár týdnech si studenti pamatují pouze malý zlomek učiva (např. v případě cizích slovíček je to jen 1 %).</p>
+          <p><small>Systém sám opraví domácí úlohy, které v něm učitel zadá. Učiteli tak ušetří několik hodin týdně. Navíc získáte zajímavé statistiky a přehled, co studenty trápí.</small></p>
+
+          <h2>Lists</h2>
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 cell">
+              <ul>
+                <li>Žáci při učení obvykle volí jednu z nejméně vhodných strategií pro osvojení učiva - opakované čtení textu.</li>
+                <li>Testování a procvičování látky vidí pouze jako kontrolu, že si látku správně zapamatovali.</li>
+                <li>Tato metoda „nasávací houby“ je nejméně účinná a již po pár týdnech si studenti pamatují pouze malý zlomek učiva (např. v případě cizích slovíček je to jen 1 %).</li>
+              </ul>
+            </div>
+            <div class="medium-6 cell">
+              <ol>
+                <li>Žáci při učení obvykle volí jednu z nejméně vhodných strategií pro osvojení učiva - opakované čtení textu.</li>
+                <li>Testování a procvičování látky vidí pouze jako kontrolu, že si látku správně zapamatovali.</li>
+                <li>Tato metoda „nasávací houby“ je nejméně účinná a již po pár týdnech si studenti pamatují pouze malý zlomek učiva (např. v případě cizích slovíček je to jen 1 %).</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
@@ -82,6 +119,13 @@
             <a href="#" class="medium warning suppressed button">Warning Button</a>
             <a href="#" class="medium alert suppressed button">Alert Button</a>
           </p>
+          <p>
+            <a href="#" class="medium primary suppressed button" disabled>Primary Button</a>
+            <a href="#" class="medium secondary suppressed button" disabled>Secondary Button</a>
+            <a href="#" class="medium success suppressed button" disabled>Success Button</a>
+            <a href="#" class="medium warning suppressed button" disabled>Warning Button</a>
+            <a href="#" class="medium alert suppressed button" disabled>Alert Button</a>
+          </p>
 
           <h3>Small Buttons</h3>
           <p>
@@ -105,6 +149,14 @@
             <a href="#" class="small warning suppressed button">Warning Button</a>
             <a href="#" class="small alert suppressed button">Alert Button</a>
           </p>
+          <p>
+            <a href="#" class="small primary suppressed button" disabled>Primary Button</a>
+            <a href="#" class="small secondary suppressed button" disabled>Secondary Button</a>
+            <a href="#" class="small success suppressed button" disabled>Success Button</a>
+            <a href="#" class="small warning suppressed button" disabled>Warning Button</a>
+            <a href="#" class="small alert suppressed button" disabled>Alert Button</a>
+          </p>
+
           <h3>Tiny Buttons</h3>
           <p>
             <a href="#" class="tiny primary button">Primary Button</a>
@@ -126,6 +178,13 @@
             <a href="#" class="tiny success suppressed button">Success Button</a>
             <a href="#" class="tiny warning suppressed button">Warning Button</a>
             <a href="#" class="tiny alert suppressed button">Alert Button</a>
+          </p>
+          <p>
+            <a href="#" class="tiny primary suppressed button" disabled>Primary Button</a>
+            <a href="#" class="tiny secondary suppressed button" disabled>Secondary Button</a>
+            <a href="#" class="tiny success suppressed button" disabled>Success Button</a>
+            <a href="#" class="tiny warning suppressed button" disabled>Warning Button</a>
+            <a href="#" class="tiny alert suppressed button" disabled>Alert Button</a>
           </p>
         </div>
       </div>
@@ -246,18 +305,27 @@
               <th>Exercise</th>
               <th>Due Date</th>
               <th>Passed</th>
-              <th>•</th>
+              <th>Actions</th>
             </tr>
             </thead>
             <tbody>
             <tr>
               <td>
                 Refresh<br>
-                <small>sdlfkjas</small>
+                <small>Description</small>
               </td>
               <td>Filler</td>
               <td>Mar 3</td>
               <td>12 / 17</td>
+              <td><a href="#" class="small success suppressed button">More</a></td>
+            </tr>
+            <tr>
+              <td>
+                Refresh
+              </td>
+              <td>Filler</td>
+              <td>Aug 7</td>
+              <td>15 / 17</td>
               <td><a href="#" class="small success suppressed button">More</a></td>
             </tr>
             </tbody>
