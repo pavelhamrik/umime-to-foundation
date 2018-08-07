@@ -1,38 +1,40 @@
 @import 'util/util';
-@import '../settings';
+@import '../custom-settings';
 
 .button {
     box-shadow: $button-box-shadow;
     border: transparent;
 
-
     &.primary {
-        box-shadow: $button-primary-box-shadow;
         font-weight: $global-weight-bold;
+    }
+
+    &[disabled] {
+        box-shadow: none;
     }
 
     &.suppressed {
         background: $button-suppressed-background;
+        box-shadow: $button-suppressed-box-shadow;
         color: $black;
 
-        &.primary {
-            color: get-color(primary);
-        }
-        &.secondary {
-            color: get-color(secondary);
-        }
-        &.success {
-            color: get-color(success);
-        }
-        &.warning {
-            color: get-color(warning);
-        }
-        &.alert {
-            color: get-color(alert);
+        @each $designation, $color in $foundation-palette {
+            &.#{$designation} {
+                color: $color;
+            }
+
+            &.#{$designation}:hover {
+                background-color: $button-suppressed-background-hover;
+            }
         }
 
         &.suppressed:hover {
             background: scale-color($button-suppressed-background, $lightness: -7%)
+        }
+
+        &[disabled] {
+            background: $button-suppressed-background;
+            box-shadow: none;
         }
     }
 

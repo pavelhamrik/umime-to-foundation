@@ -1,5 +1,5 @@
 @import 'util/util';
-@import 'settings';
+@import 'custom-settings';
 
 @each $app, $color in $custom-apps {
     .color-#{$app} {
