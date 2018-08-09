@@ -16,10 +16,15 @@
             padding: $custom-vertical-padding $custom-horizontal-padding;
         }
 
+        h1,
         h2,
         h3 {
             margin-bottom: 0;
             line-height: 1.5rem;
+        }
+
+        h1 {
+            font-size: $custom-content-box-h1-size;
         }
 
         h2 {

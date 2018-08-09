@@ -4,3 +4,7 @@
 a {
     transition: $custom-hover-transition;
 }
+
+p.suppressed {
+    color: $medium-gray;
+}

@@ -17,12 +17,12 @@ $border-gray: rgba($black, 0.1);
 $border-medium-gray: rgba($black, 0.18);
 
 $custom-apps: (
-        'czech':        #00CA65,
-        'english':      #9B59B6,
-        'math':         #0BB9F3,
-        'facts':        #E65D50,
-        'programming':  #078AB6,
-        'german':       #F0AE35
+    'czech':        #00CA65,
+    'english':      #9B59B6,
+    'math':         #0BB9F3,
+    'facts':        #E65D50,
+    'programming':  #078AB6,
+    'german':       #F0AE35
 );
 
 $custom-active-darken-color: -14%;
@@ -48,6 +48,7 @@ $custom-floating-shadow: 0 1px 7px  0 rgba(0,0,0,.07),
 
 // font sizes
 
+$custom-content-box-h1-size: 21px;
 $custom-content-box-h2-size: 18px;
 $custom-content-box-h3-size: 16px;
 
@@ -59,6 +60,11 @@ $custom-small-line-height: 1.25rem;
 // icons
 
 $custom-icon-font: 'umime-to' !important;
+
+$custom-content-icons: (
+    'doplnovacka',
+    'diktaty'
+);
 
 // helpers
 
